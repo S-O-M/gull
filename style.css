@@ -85,6 +85,7 @@ hr{
 .about-text{
   position: relative;
   display: inline-block;
+  margin: auto;
   width: 600px;
 }
 
