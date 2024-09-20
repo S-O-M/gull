@@ -1,18 +1,16 @@
-/* Custom styles for the portfolio */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #fdd0e7;
 }
 
-hr{
+hr {
   border: none;
   border-top: 3px dotted #000000;
   margin: auto auto 50px auto;
   width: 75%;
 }
 
-/* Navbar */
+
 .navbar-brand {
   font-weight: bold;
 }
@@ -22,7 +20,6 @@ hr{
   left: 0;
   right: 0;
   background-color: #d6488f;
-  /* border: 1px solid #000000; */
   border-radius: 10px;
   margin: 10px;
   z-index: 100;
@@ -42,7 +39,6 @@ hr{
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  /* font-weight: 700; */
   font-size: 20px;
 }
 
@@ -75,24 +71,44 @@ hr{
   transform: scaleX(1);
 }
 
-/* About Section */
 #about {
   background-color: #fdd0e7;
   position: relative;
   margin-top: 0px;
 }
 
-.about-text{
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  width: 600px;
+.about-text {
+  font-size: 18px; 
+  line-height: 1.6; 
+  max-width: 60%; 
+  margin: 0 auto; 
 }
 
-/* #about img {
-  width: 150px;
-  height: 150px;
-} */
+@media only screen and (max-width: 1024px) {
+  .about-text {
+      font-size: 16px;
+      max-width: 80%;
+      line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-text {
+      font-size: 14px;
+      max-width: 90%; 
+      line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-text {
+      font-size: 12px;
+      max-width: 100%;
+      line-height: 1.3;
+  }
+}
+
+
 
 #about h1 {
   font-size: 2.5rem;
@@ -103,7 +119,6 @@ hr{
   font-size: 1.25rem;
 }
 
-/* Projects Section */
 #projects {
   padding: 60px 0;
 }
@@ -118,7 +133,6 @@ hr{
   transform: translateY(-20px);
 }
 
-
 #homeButton {
   position: fixed;
   bottom: 20px;
@@ -128,7 +142,7 @@ hr{
   border-radius: 50%;
   padding: 0px;
   text-align: center;
-  font-size: 16px; /* Smaller font size */
+  font-size: 16px; 
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -138,15 +152,12 @@ hr{
   border: 3px solid #00fff0;
 }
 
-/* Extra Small Button */
 .home-btn {
   padding: 2px 2px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 9px;
 }
-
-
 
 .img_size {
   width: 225px;
@@ -157,14 +168,12 @@ hr{
   margin-top: 40px;
 }
 
-.head-name{
+.head-name {
   font-weight: bold;
 }
 
-
 .title {
   width: 150px;
-  /* font-weight: bold; */
   position: relative;
   margin: auto;
 }
@@ -198,31 +207,29 @@ hr{
   transform: scaleX(1);
 }
 
-.contact-title{
+.contact-title {
   width: 175px;
-  /* font-weight: bold; */
   position: relative;
   margin: auto;
 }
 
-.contact-icon{
+.contact-icon {
   position: relative;
   display: inline-block;
   margin: auto;
   width: 200px;
-  
 }
 
 .social-icon {
-  width: 40px;  /* Adjust the size of the icons */
+  width: 40px;*/
   height: 40px;
 }
 
 .social-icon:hover {
-  opacity: 0.7; /* Optional: Add a hover effect */
+  opacity: 0.7; 
 }
 
-.msg-btn{
+.msg-btn {
   position: relative;
   display: inline-block;
   margin: auto;
@@ -231,14 +238,12 @@ hr{
 
 @media (max-width: 768px) {
   form.mx-auto {
-      max-width: 300px; /* Reduce the form width on smaller screens */
+    max-width: 300px;
   }
 }
 
 @media (min-width: 769px) {
   form.mx-auto {
-      max-width: 400px; /* Slightly increase the form width on medium screens */
+    max-width: 400px; 
   }
 }
-
-
